@@ -1,0 +1,2 @@
+import type { MetadataRoute } from "next";
+export default function sitemap():MetadataRoute.Sitemap{const base="https://henry-ai-portfolio.vercel.app";return ["","/journey","/roadmap","/projects","/experience","/about","/projects/enterprise-ai-agent-platform","/projects/voice-schedule-agent","/projects/agent-evaluation-lab"].map(url=>({url:base+url,lastModified:new Date(),changeFrequency:"monthly" as const,priority:url===""?1:.8}))}
